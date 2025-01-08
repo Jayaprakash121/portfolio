@@ -40,7 +40,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    padding-top: 80px;
     z-index: -10;
 
     > .box{
@@ -59,6 +59,8 @@ a:hover{
             color: #000000;
             font-family: 'Archivo', sans-serif;
             font-size: 3.0em;
+            padding-top: 20px;
+            padding-bottom: 10px;
         }
 
         >p{
@@ -79,7 +81,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    padding-top: 80px;
     width: 100%;
 
     > h1{
@@ -123,7 +125,7 @@ a:hover{
         }
     }
 }
-
+/*
 #projects {
     display: flex;
     align-items: center;
@@ -238,6 +240,88 @@ button:active::before {
     box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
     transform: translate3d(0, 0, -1em);
 }
+*/
+
+#Projects{
+    text-align: center;
+    
+    >h1{
+        color: #000000;
+        font-family: 'Archivo', sans-serif;
+        font-size: 3.5em;
+        padding-top: 80px;
+    }
+
+}
+
+.robotics{
+    > h2{
+        padding-top: 55px;
+        padding-bottom: 10px;
+        color: black;
+        font-family: 'Archivo', sans-serif;
+        font-size: 35px;
+    }
+}
+
+.ml{
+    > h2{
+        padding-top: 55px;
+        padding-bottom: 10px;
+        color: black;
+        font-family: 'Archivo', sans-serif;
+        font-size: 35px;
+    }
+}
+.web{
+    > h2{
+        padding-top: 55px;
+        padding-bottom: 10px;
+        color: black;
+        font-family: 'Archivo', sans-serif;
+        font-size: 35px;
+    }
+}
+.crd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    
+
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    
+    line-height: 1.5;
+    letter-spacing: 1px;
+    
+    >p{
+        color: #d8cbc4;
+        font-family: 'Amaranth', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    > h2{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        color: black;
+        font-family: 'Archivo', sans-serif;
+        font-size: 35px;
+    }
+    > img{
+        width: 250px;
+        height: 250px;
+    }
+
+    >a{
+        text-decoration: underline;
+        font-style: italic;
+    }
+}
+
 
 #contact{
     display: flex;
@@ -247,8 +331,11 @@ button:active::before {
     background-image: url("images/background3.avif");
     background-size: cover;
     margin-top: 30px;
+    color:#000000;
 
     > h1{
+        padding-top: 15px;
+        padding-bottom: 10px;
         color: #807f7f;
         font-family: 'Archivo', sans-serif;
         font-size: 40px;
