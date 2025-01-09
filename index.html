@@ -15,7 +15,7 @@
   <link href="images/jp_icon.jpeg" rel="icon">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body onload="projects()">
   <div id="header-nav">
     <div class="container">
   <!-- H1 for SEO -->
@@ -148,7 +148,13 @@
   -->
   <section id="Projects">
     <h1 style="text-align: center;">Projects</h1>
-    <div class="robotics">
+    <div class="switch">
+      <button onclick="change1()" id="button1">AI/ML</button>
+      <button onclick="change2()" id="button2">Robotics</button>
+      <button onclick="change3()" id="button3">Web</button>
+      
+    </div>
+    <div id="robotics">
       <h2>Robotics</h2>
       <div id="carouselExampleAutoplaying-1" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -183,37 +189,44 @@
         </button>
       </div>
     </div>
-    <div class="ml">
+    <div id="ml">
       <h2>AI/ML</h2>
       <div id="carouselExampleAutoplaying-2" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex justify-content-center">
               <div class="crd">
-                <img src="images/ca_wiss.png" style="filter: drop-shadow(-5px 5px 5px #5d616b);" alt="campus_ambassador">
+                <img src="images/smart_attendance_system.webp" style="width:80%" alt="Smart Attendance System">
                 <h2>Smart Attendance System</h2>
-                <p>This is the campus ambassador website for the Wissenaire fest, IIT Bhubaneswar. It was made by using HTML and CSS.</p>
-                <a href="https://jayaprakash121.github.io/ca.wissenaire.org/">link to open</a>
+                <p>A smart attendance system is an automated solution that uses advanced technologies like facial recognition 
+                  to track and manage attendance efficiently. It eliminates manual processes, reduces errors, and provides 
+                  real-time data for better monitoring and reporting, enhancing productivity and accountability in workplaces, schools, and events.</p>
+                <a href="https://github.com/Jayaprakash121/smart_attendace_system" target="_blank">link to open</a>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="d-flex justify-content-center">
               <div class="crd">
-                <img src="images/jigsaw.jpeg" alt="Hand Cricket">
+                <img src="images/jigsaw.jpeg" alt="Jigsaw Puzzle Solver">
                 <h2>Jigsaw Puzzle Solver</h2>
-                <p>It is about the hand cricket game which we had played in our childhood time, and this was made by using HTML, CSS and Javascript.</p>
-                <a href="https://jayaprakash121.github.io/HandCricket/">link to open</a>
+                <p>A jigsaw puzzle solver is a system or algorithm designed to efficiently assemble pieces of a jigsaw 
+                  puzzle by analyzing their shapes, colors, and patterns. It uses techniques like image recognition, and 
+                  piece matching to recreate the original image with precision.</p>
+                <a href="https://github.com/Jayaprakash121/jigsaw_puzzle_solver" target="_blank">link to open</a>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="d-flex justify-content-center">
               <div class="crd">
-                <img src="images/hand_cricket.jpg" alt="Hand Cricket">
+                <img src="images/hand_cricket.jpg" alt="Risk Analyzer">
                 <h2>Saas T&C Risk Analyzer</h2>
-                <p>It is about the hand cricket game which we had played in our childhood time, and this was made by using HTML, CSS and Javascript.</p>
-                <a href="https://jayaprakash121.github.io/HandCricket/">link to open</a>
+                <p>The SaaS T&C Risk Analyzer is an AI-powered tool designed to help businesses identify potential risks 
+                  in SaaS agreements quickly. It scans vendor terms and conditions to flag critical issues such as data 
+                  privacy concerns, hidden fees, termination clauses, and compliance risks, enabling informed decision-making 
+                  for safer and more transparent software purchases.</p>
+                <a href="https://github.com/Jayaprakash121/T_and_C_risk_analyzer" target="_blank">link to open</a>
               </div>
             </div>
           </div>
@@ -228,7 +241,7 @@
         </button>
       </div>
     </div>
-    <div class="web">
+    <div id="web">
       <h2>Web Development</h2>
       <div id="carouselExampleAutoplaying-3" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">

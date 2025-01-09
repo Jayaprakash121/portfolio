@@ -45,3 +45,47 @@ $('.menu-link').click(function(){
   }
 });
   });
+
+ml = document.getElementById("ml");
+robotics = document.getElementById("robotics");
+web = document.getElementById("web");
+slider = document.getElementById("slider");
+b1 = document.getElementById("button1");
+b2 = document.getElementById("button2");
+b3 = document.getElementById("button3");
+
+function projects(){
+  ml.style.display="inline"
+  robotics.style.display="none";
+  web.style.display="none";
+  b1.style.backgroundColor="rgb(23, 175, 186)";
+  b2.style.backgroundColor="transparent";
+  b3.style.backgroundColor="transparent";
+  slider.style.translate="translateX(-50px)";
+}
+function change1(){
+  ml.style.display="inline"
+  robotics.style.display="none";
+  web.style.display="none";
+  b1.style.backgroundColor="rgb(23, 175, 186)";
+  b2.style.backgroundColor="transparent";
+  b3.style.backgroundColor="transparent";
+}
+
+function change2(){
+  ml.style.display="none"
+  robotics.style.display="inline";
+  web.style.display="none";
+  b2.style.backgroundColor="rgb(23, 175, 186)";
+  b1.style.backgroundColor="transparent";
+  b3.style.backgroundColor="transparent";
+}
+
+function change3(){
+  ml.style.display="none"
+  robotics.style.display="none";
+  web.style.display="inline";
+  b3.style.backgroundColor="rgb(23, 175, 186)";
+  b2.style.backgroundColor="transparent";
+  b1.style.backgroundColor="transparent";
+}
